@@ -9,36 +9,31 @@ Group(de):	X11/Applikationen/Spiele
 Group(pl):	X11/Aplikacje/Gry
 Source0:	http://download.sourceforge.net/tuxracer/%{name}-%{version}.tar.gz
 Source1:	http://download.sourceforge.net/tuxracer/%{name}-data-%{version}.tar.gz
-#Patch0:		-
 URL:		http://www.tuxracer.com/
-#BuildPrereq:	-
 BuildRequires:	OpenGL-devel
 BuildRequires:	SDL-devel
 BuildRequires:	SDL_mixer-devel
-#Prereq:		-
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_prefix		/usr/X11R6
 %define		_mandir		%{_prefix}/man
 
 %description
+Tux Racer lets you take on the role of Tux the Linux Penguin as he races down
+steep, snow-covered mountains. Enter cups and compete to win the title! Tux
+Racer includes a variety of options for gameplay, including the ability to race
+courses in fog, at night, and under high winds
 
 %description -l pl
+Tux Racer pozwala ci wcieliæ siê w rolê Tuxa, Linuksowego Pingwina podczas zjazdu
+w dó³ pokrytych ¶niegiem gór. We¼ udzia³ w zawodach i zdob±d¼ tytu³! Tux Racer
+zawiera wiele opcji, miêdzy innymi mo¿liwo¶æ zje¿d¿ania we mgle, w nocy i podczas
+silnego wiatru.
 
 %prep
 %setup  -q
-#%patch0 -p1
 
 %build
-#rm -f missing
-#libtoolize --copy --force
-#gettextize --copy --force
-#aclocal
-#autoconf
-#automake -a -c
-
-#CPPFLAGS="-I/usr/X11R6/include"
-#export CFLAGS
 
 %configure \
 	--with-data-dir=%{_datadir}/%{name}
