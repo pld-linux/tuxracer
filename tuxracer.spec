@@ -2,11 +2,11 @@ Summary:	Tux Racer game
 Summary(pl):	Gra Tux Racer
 Name:		tuxracer
 Version:	0.61
-Release:	3
+Release:	4
 License:	GPL
 Group:		X11/Applications/Games
-Source0:	http://download.sourceforge.net/tuxracer/%{name}-%{version}.tar.gz
-Source1:	http://download.sourceforge.net/tuxracer/%{name}-data-%{version}.tar.gz
+Source0:	ftp://ftp.sourceforge.net/pub/sourceforge/tuxracer/%{name}-%{version}.tar.gz
+Source1:	ftp://ftp.sourceforge.net/pub/sourceforge/tuxracer/%{name}-data-%{version}.tar.gz
 Source2:	%{name}.desktop
 Source3:	%{name}.png
 URL:		http://www.tuxracer.com/
@@ -24,11 +24,10 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %define		_mandir		%{_prefix}/man
 
 %description
-Tux Racer lets you take on the role of Tux the Linux Penguin as he
-races down steep, snow-covered mountains. Enter cups and compete to
-win the title! Tux Racer includes a variety of options for gameplay,
-including the ability to race courses in fog, at night, and under high
-winds
+Tux Racer lets you take on the role of Tux the Linux Penguin as he races
+down steep, snow-covered mountains. Enter cups and compete to win the 
+title! Tux Racer includes a variety of options for gameplay, including 
+the ability to race courses in fog, at night, and under high winds
 
 %description -l pl
 Tux Racer pozwala ci wcieliæ siê w rolê Tuxa, Linuksowego Pingwina
