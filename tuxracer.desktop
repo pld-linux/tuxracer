@@ -1,5 +1,14 @@
 [Desktop Entry]
 Name=Tuxracer
+Name[af]=Tuxresies
+Name[eo]=Tuĉjoglitado
+Name[lv]=TuxBraucējs
+Name[ru]=Гонщик Tux
+Name[sv]=Tuxracer
+Name[tr]=Penguen Yarışçı
+Name[ven]=Ramutatisano wa Tux
+Name[zh_TW]=企鵝賽車
+Name[zu]=Tux Umgijimi
 Comment=A great racing game starring Tux
 Comment[pl]=Gra wyścigowa z pingwinem Tuksem w roli głównej
 Exec=tuxracer
