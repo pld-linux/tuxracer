@@ -1,5 +1,4 @@
-Summary:	Tux Racer game
-Summary(es):	Race down mountainous terrain with Tux!
+Summary:	Race down mountainous terrain with Tux!
 Summary(pl):	Gra Tux Racer
 Summary(pt_BR):	Corra montanha abaixo com o Tux!
 Name:		tuxracer
