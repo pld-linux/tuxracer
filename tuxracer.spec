@@ -54,7 +54,8 @@ CPPFLAGS="%{rpmcflags} -DGLX_GLXEXT_LEGACY"
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT{%{_datadir}/%{name},%{_applnkdir}/Games/Racing,%{_pixmapsdir}}
 
-%{__make} install DESTDIR=$RPM_BUILD_ROOT
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT
 
 install %{SOURCE2} $RPM_BUILD_ROOT%{_applnkdir}/Games/Racing
 install %{SOURCE3} $RPM_BUILD_ROOT%{_pixmapsdir}
