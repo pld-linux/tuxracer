@@ -9,8 +9,10 @@ Source0:	http://dl.sourceforge.net/tuxracer/%{name}-%{version}.tar.gz
 # Source0-md5:	206e8197ceaf0f00b25d4e2b4156e563
 Source1:	http://dl.sourceforge.net/tuxracer/%{name}-data-%{version}.tar.gz
 # Source1-md5:	aef877fee9e1a56483ff01fbdfb1e4b3
-Source2:	%{name}.desktop
-Source3:	%{name}.png
+Source2:	http://brcha.free.fr/data/projects/RoadsOfSerbia/RoadsOfSerbia.tar.bz2
+# Source2-md5:	5eff75e60b3d4a46f97bb697d968a299
+Source3:	%{name}.desktop
+Source4:	%{name}.png
 Patch0:		%{name}-gcc33.patch
 URL:		http://www.tuxracer.com/
 BuildRequires:	OpenGL-devel
@@ -38,7 +40,7 @@ zdob±d¼ tytu³! Tux Racer zawiera wiele opcji, miêdzy innymi mo¿liwo¶æ
 zje¿d¿ania we mgle, w nocy i podczas silnego wiatru.
 
 %prep
-%setup -q -a1
+%setup -q -a1 -a2
 %patch -p1
 
 %build
@@ -57,10 +59,11 @@ install -d $RPM_BUILD_ROOT{%{_datadir}/%{name},%{_applnkdir}/Games/Racing,%{_pix
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
-install %{SOURCE2} $RPM_BUILD_ROOT%{_applnkdir}/Games/Racing
-install %{SOURCE3} $RPM_BUILD_ROOT%{_pixmapsdir}
+install %{SOURCE3} $RPM_BUILD_ROOT%{_applnkdir}/Games/Racing
+install %{SOURCE4} $RPM_BUILD_ROOT%{_pixmapsdir}
 
 mv -f %{name}-data-%{version}/* $RPM_BUILD_ROOT%{_datadir}/%{name}
+mv -f Roads\ Of\ Serbia/ $RPM_BUILD_ROOT%{_datadir}/%{name}/courses/contrib/roads_of_serbia
 
 %clean
 rm -rf $RPM_BUILD_ROOT
