@@ -13,7 +13,10 @@ URL:		http://www.tuxracer.com/
 BuildRequires:	OpenGL-devel
 BuildRequires:	SDL-devel
 BuildRequires:	SDL_mixer-devel
+Requires:	OpenGL
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
+
+%define		_noautoreqdep	libGL.so.1 libGLU.so.1
 
 %define		_prefix		/usr/X11R6
 %define		_mandir		%{_prefix}/man
@@ -34,7 +37,6 @@ silnego wiatru.
 %setup  -q
 
 %build
-
 %configure \
 	--with-data-dir=%{_datadir}/%{name}
 %{__make}
