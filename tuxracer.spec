@@ -58,14 +58,12 @@ install %{SOURCE3} $RPM_BUILD_ROOT%{_pixmapsdir}
 
 mv -f %{name}-data-%{version}/* $RPM_BUILD_ROOT%{_datadir}/%{name}
 
-gzip -9nf AUTHORS NEWS README ChangeLog
-
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc *.gz html
+%doc AUTHORS NEWS README ChangeLog html/*
 %attr(755,root,root) %{_bindir}/tuxracer
 %{_datadir}/%{name}
 %{_applnkdir}/Games/*
