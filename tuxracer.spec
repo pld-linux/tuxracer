@@ -1,5 +1,7 @@
 Summary:	Tux Racer game
+Summary(es):	Race down mountainous terrain with Tux!
 Summary(pl):	Gra Tux Racer
+Summary(pt_BR):	Corra montanha abaixo com o Tux!
 Name:		tuxracer
 Version:	0.61
 Release:	8
@@ -38,6 +40,10 @@ Tux Racer pozwala wcieliæ siê w rolê Tuksa, Linuksowego Pingwina
 podczas zjazdu w dó³ pokrytych ¶niegiem gór. We¼ udzia³ w zawodach i
 zdob±d¼ tytu³! Tux Racer zawiera wiele opcji, miêdzy innymi mo¿liwo¶æ
 zje¿d¿ania we mgle, w nocy i podczas silnego wiatru.
+
+%description -l pt_BR
+O objetivo do Tux Racer é diversão! Corra montanha abaixo tão rápido 
+quanto possível e capture peixes para aumentar sua pontuação!
 
 %prep
 %setup -q -a1 -a2
