@@ -40,7 +40,7 @@ zje¿d¿ania we mgle, w nocy i podczas silnego wiatru.
 %setup -q -a 1
 
 %build
-aclocal
+%{__aclocal}
 %{__autoconf}
 %{__automake}
 %configure \
