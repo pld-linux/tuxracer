@@ -2,7 +2,7 @@ Summary:	Tux Racer game
 Summary(pl):	Gra Tux Racer
 Name:		tuxracer
 Version:	0.61
-Release:	5
+Release:	6
 License:	GPL
 Group:		X11/Applications/Games
 Source0:	http://dl.sourceforge.net/tuxracer/%{name}-%{version}.tar.gz
@@ -11,32 +11,35 @@ Source1:	http://dl.sourceforge.net/tuxracer/%{name}-data-%{version}.tar.gz
 # Source1-md5:	aef877fee9e1a56483ff01fbdfb1e4b3
 Source2:	%{name}.desktop
 Source3:	%{name}.png
+Patch0:		%{name}-gcc33.patch
 URL:		http://www.tuxracer.com/
-BuildRequires:	autoconf
-BuildRequires:	automake
 BuildRequires:	OpenGL-devel
 BuildRequires:	SDL-devel
 BuildRequires:	SDL_mixer-devel
-BuildRequires:	tcl-devel
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	tcl-devel >= 8.4.3
 Requires:	OpenGL
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_noautoreqdep	libGL.so.1 libGLU.so.1
 
 %description
-Tux Racer lets you take on the role of Tux the Linux Penguin as he races
-down steep, snow-covered mountains. Enter cups and compete to win the 
-title! Tux Racer includes a variety of options for gameplay, including 
-the ability to race courses in fog, at night, and under high winds
+Tux Racer lets you take on the role of Tux the Linux Penguin as he
+races down steep, snow-covered mountains. Enter cups and compete to
+win the title! Tux Racer includes a variety of options for gameplay,
+including the ability to race courses in fog, at night, and under high
+winds.
 
 %description -l pl
-Tux Racer pozwala ci wcieliæ siê w rolê Tuxa, Linuksowego Pingwina
+Tux Racer pozwala wcieliæ siê w rolê Tuksa, Linuksowego Pingwina
 podczas zjazdu w dó³ pokrytych ¶niegiem gór. We¼ udzia³ w zawodach i
 zdob±d¼ tytu³! Tux Racer zawiera wiele opcji, miêdzy innymi mo¿liwo¶æ
 zje¿d¿ania we mgle, w nocy i podczas silnego wiatru.
 
 %prep
-%setup -q -a 1
+%setup -q -a1
+%patch -p1
 
 %build
 %{__aclocal}
