@@ -1,5 +1,5 @@
 Summary:	Tux Racer game
-Summary(pl):	Gra TuxRacer
+Summary(pl):	Gra Tux Racer
 Name:		tuxracer
 Version:	0.61
 Release:	2
@@ -12,6 +12,8 @@ Source1:	http://download.sourceforge.net/tuxracer/%{name}-data-%{version}.tar.gz
 Source2:	%{name}.desktop
 Source3:	%{name}.png
 URL:		http://www.tuxracer.com/
+BuildRequires:	autoconf
+BuildRequires:	automake
 BuildRequires:	OpenGL-devel
 BuildRequires:	SDL-devel
 BuildRequires:	SDL_mixer-devel
