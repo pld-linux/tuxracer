@@ -6,7 +6,9 @@ Release:	5
 License:	GPL
 Group:		X11/Applications/Games
 Source0:	http://dl.sourceforge.net/tuxracer/%{name}-%{version}.tar.gz
+# Source0-md5:	206e8197ceaf0f00b25d4e2b4156e563
 Source1:	http://dl.sourceforge.net/tuxracer/%{name}-data-%{version}.tar.gz
+# Source1-md5:	aef877fee9e1a56483ff01fbdfb1e4b3
 Source2:	%{name}.desktop
 Source3:	%{name}.png
 URL:		http://www.tuxracer.com/
