@@ -24,16 +24,17 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %define		_mandir		%{_prefix}/man
 
 %description
-Tux Racer lets you take on the role of Tux the Linux Penguin as he races down
-steep, snow-covered mountains. Enter cups and compete to win the title! Tux
-Racer includes a variety of options for gameplay, including the ability to race
-courses in fog, at night, and under high winds
+Tux Racer lets you take on the role of Tux the Linux Penguin as he
+races down steep, snow-covered mountains. Enter cups and compete to
+win the title! Tux Racer includes a variety of options for gameplay,
+including the ability to race courses in fog, at night, and under high
+winds
 
 %description -l pl
-Tux Racer pozwala ci wcieliæ siê w rolê Tuxa, Linuksowego Pingwina podczas zjazdu
-w dó³ pokrytych ¶niegiem gór. We¼ udzia³ w zawodach i zdob±d¼ tytu³! Tux Racer
-zawiera wiele opcji, miêdzy innymi mo¿liwo¶æ zje¿d¿ania we mgle, w nocy i podczas
-silnego wiatru.
+Tux Racer pozwala ci wcieliæ siê w rolê Tuxa, Linuksowego Pingwina
+podczas zjazdu w dó³ pokrytych ¶niegiem gór. We¼ udzia³ w zawodach i
+zdob±d¼ tytu³! Tux Racer zawiera wiele opcji, miêdzy innymi mo¿liwo¶æ
+zje¿d¿ania we mgle, w nocy i podczas silnego wiatru.
 
 %prep
 %setup -q -a 1
@@ -57,7 +58,7 @@ install %{SOURCE3} $RPM_BUILD_ROOT%{_pixmapsdir}
 
 mv -f %{name}-data-%{version}/* $RPM_BUILD_ROOT%{_datadir}/%{name}
 
-gzip -9nf AUTHORS NEWS README ChangeLog 
+gzip -9nf AUTHORS NEWS README ChangeLog
 
 %clean
 rm -rf $RPM_BUILD_ROOT
