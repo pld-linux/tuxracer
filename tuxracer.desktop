@@ -1,9 +1,0 @@
-[Desktop Entry]
-Name=Tuxracer
-Comment=A great racing game starring Tux
-Comment[pl]=Gra wyścigowa z pingwinem Tuksem w roli głównej
-Exec=tuxracer
-Icon=tuxracer.png
-Terminal=0
-Type=Application
-# vi: encoding=utf-8
