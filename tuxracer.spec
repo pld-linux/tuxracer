@@ -2,7 +2,7 @@ Summary:	Tux Racer game
 Summary(pl):	Gra Tux Racer
 Name:		tuxracer
 Version:	0.61
-Release:	6
+Release:	7
 License:	GPL
 Group:		X11/Applications/Games
 Source0:	http://dl.sourceforge.net/tuxracer/%{name}-%{version}.tar.gz
