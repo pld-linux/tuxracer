@@ -21,7 +21,6 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_noautoreqdep	libGL.so.1 libGLU.so.1
 
-
 %description
 Tux Racer lets you take on the role of Tux the Linux Penguin as he races
 down steep, snow-covered mountains. Enter cups and compete to win the 
@@ -41,6 +40,7 @@ zje¿d¿ania we mgle, w nocy i podczas silnego wiatru.
 %{__aclocal}
 %{__autoconf}
 %{__automake}
+CPPFLAGS="%{rpmcflags} -DGLX_GLXEXT_LEGACY"
 %configure \
 	--with-data-dir=%{_datadir}/%{name}
 %{__make}
