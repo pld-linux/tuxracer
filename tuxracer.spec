@@ -1,5 +1,5 @@
 Summary:	Race down mountainous terrain with Tux!
-Summary(pl):	Gra Tux Racer
+Summary(pl):	Zje¿d¿aj z Tuksem w górzystym terenie!
 Summary(pt_BR):	Corra montanha abaixo com o Tux!
 Name:		tuxracer
 Version:	0.61
