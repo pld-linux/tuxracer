@@ -42,7 +42,7 @@ zje¿d¿ania we mgle, w nocy i podczas silnego wiatru.
 %build
 aclocal
 autoconf
-automake -a -c
+automake -a -c -f
 %configure \
 	--with-data-dir=%{_datadir}/%{name}
 %{__make}
