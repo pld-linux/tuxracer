@@ -2,7 +2,7 @@ Summary:	Tux Racer game
 Summary(pl):	Gra TuxRacer
 Name:		tuxracer
 Version:	0.61
-Release:	1
+Release:	2
 License:	GPL
 Group:		X11/Applications/Games
 Group(de):	X11/Applikationen/Spiele
@@ -39,6 +39,9 @@ silnego wiatru.
 %setup -q -a 1
 
 %build
+automake -a
+aclocal
+autoconf
 %configure \
 	--with-data-dir=%{_datadir}/%{name}
 %{__make}
@@ -61,7 +64,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc *.gz
+%doc *.gz html
 %attr(755,root,root) %{_bindir}/tuxracer
 %{_datadir}/%{name}
 %{_applnkdir}/Games/*
