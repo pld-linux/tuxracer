@@ -2,7 +2,7 @@ Summary:	Tux Racer game
 Summary(pl):	Gra Tux Racer
 Name:		tuxracer
 Version:	0.61
-Release:	2
+Release:	3
 License:	GPL
 Group:		X11/Applications/Games
 Group(de):	X11/Applikationen/Spiele
@@ -41,21 +41,21 @@ silnego wiatru.
 %setup -q -a 1
 
 %build
-automake -a
 aclocal
 autoconf
+automake -a -c
 %configure \
 	--with-data-dir=%{_datadir}/%{name}
 %{__make}
 
 %install
 rm -rf $RPM_BUILD_ROOT
-%{__install} -d $RPM_BUILD_ROOT{%{_datadir}/%{name},%{_applnkdir}/Games,%{_pixmapsdir}}
+install -d $RPM_BUILD_ROOT{%{_datadir}/%{name},%{_applnkdir}/Games,%{_pixmapsdir}}
 
 %{__make} install DESTDIR=$RPM_BUILD_ROOT
 
-%{__install} %{SOURCE2} $RPM_BUILD_ROOT%{_applnkdir}/Games
-%{__install} %{SOURCE3} $RPM_BUILD_ROOT%{_pixmapsdir}
+install %{SOURCE2} $RPM_BUILD_ROOT%{_applnkdir}/Games
+install %{SOURCE3} $RPM_BUILD_ROOT%{_pixmapsdir}
 
 mv -f %{name}-data-%{version}/* $RPM_BUILD_ROOT%{_datadir}/%{name}
 
