@@ -2,7 +2,7 @@ Summary:	Tux Racer game
 Summary(pl):	Gra Tux Racer
 Name:		tuxracer
 Version:	0.61
-Release:	4
+Release:	5
 License:	GPL
 Group:		X11/Applications/Games
 Source0:	ftp://ftp.sourceforge.net/pub/sourceforge/tuxracer/%{name}-%{version}.tar.gz
@@ -49,11 +49,11 @@ aclocal
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT{%{_datadir}/%{name},%{_applnkdir}/Games,%{_pixmapsdir}}
+install -d $RPM_BUILD_ROOT{%{_datadir}/%{name},%{_applnkdir}/Games/Racing,%{_pixmapsdir}}
 
 %{__make} install DESTDIR=$RPM_BUILD_ROOT
 
-install %{SOURCE2} $RPM_BUILD_ROOT%{_applnkdir}/Games
+install %{SOURCE2} $RPM_BUILD_ROOT%{_applnkdir}/Games/Racing
 install %{SOURCE3} $RPM_BUILD_ROOT%{_pixmapsdir}
 
 mv -f %{name}-data-%{version}/* $RPM_BUILD_ROOT%{_datadir}/%{name}
@@ -66,5 +66,5 @@ rm -rf $RPM_BUILD_ROOT
 %doc AUTHORS NEWS README ChangeLog html/*
 %attr(755,root,root) %{_bindir}/tuxracer
 %{_datadir}/%{name}
-%{_applnkdir}/Games/*
+%{_applnkdir}/Games/Racing/*.desktop
 %{_pixmapsdir}/*
