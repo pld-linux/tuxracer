@@ -1,6 +1,7 @@
 Summary:	Race down mountainous terrain with Tux!
 Summary(pl):	Zje¿d¿aj z Tuksem w górzystym terenie!
 Summary(pt_BR):	Corra montanha abaixo com o Tux!
+Summary(de):	Tux Racer ist ein 3D-Computerspiel
 Name:		tuxracer
 Version:	0.61
 Release:	11
@@ -41,8 +42,15 @@ zdob±d¼ tytu³! Tux Racer zawiera wiele opcji, miêdzy innymi mo¿liwo¶æ
 zje¿d¿ania we mgle, w nocy i podczas silnego wiatru.
 
 %description -l pt_BR
-O objetivo do Tux Racer é diversão! Corra montanha abaixo tão rápido 
+O objetivo do Tux Racer é diversão! Corra montanha abaixo tão rápido
 quanto possível e capture peixes para aumentar sua pontuação!
+
+%description -l de
+Tux Racer ist ein 3D-Computerspiel, welches bei Linuxnutzern sehr
+beliebt ist. Die Hauptfigur ist das Maskottchen Tux. Dieses muss man
+durch geschicktes Steuern durch eine verschneite Eislandschaft
+rutschen lassen. Dabei müssen manchmal Hindernisse umschifft und
+Heringe gesammelt werden.
 
 %prep
 %setup -q -a1 -a2
