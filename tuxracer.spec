@@ -35,7 +35,7 @@ including the ability to race courses in fog, at night, and under high
 winds.
 
 %description -l pl
-Tux Racer pozwala wcieliæ siê w rolê Tuksa, Linuksowego Pingwina
+Tux Racer pozwala wcieliæ siê w rolê Tuksa, linuksowego Pingwina
 podczas zjazdu w dó³ pokrytych ¶niegiem gór. We¼ udzia³ w zawodach i
 zdob±d¼ tytu³! Tux Racer zawiera wiele opcji, miêdzy innymi mo¿liwo¶æ
 zje¿d¿ania we mgle, w nocy i podczas silnego wiatru.
