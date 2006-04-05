@@ -16,7 +16,7 @@ Source2:	http://brcha.free.fr/data/projects/RoadsOfSerbia/RoadsOfSerbia.tar.bz2
 Source3:	%{name}.desktop
 Source4:	%{name}.png
 Patch0:		%{name}-gcc33.patch
-URL:		http://www.tuxracer.com/
+URL:		http://tuxracer.sourceforge.net/
 BuildRequires:	OpenGL-devel
 BuildRequires:	SDL-devel
 BuildRequires:	SDL_mixer-devel
