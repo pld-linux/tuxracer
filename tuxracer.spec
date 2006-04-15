@@ -17,12 +17,14 @@ Source3:	%{name}.desktop
 Source4:	%{name}.png
 Patch0:		%{name}-gcc33.patch
 URL:		http://tuxracer.sourceforge.net/
-BuildRequires:	OpenGL-devel
+BuildRequires:	OpenGL-GLU-devel
 BuildRequires:	SDL-devel
 BuildRequires:	SDL_mixer-devel
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	tcl-devel >= 8.4.3
+BuildRequires:	xorg-lib-libXi-devel
+BuildRequires:	xorg-lib-libXmu-devel
 Requires:	OpenGL
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
