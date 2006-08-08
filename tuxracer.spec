@@ -56,7 +56,7 @@ Heringe gesammelt werden.
 
 %prep
 %setup -q -a1 -a2
-%patch -p1
+%patch0 -p1
 
 %build
 %{__aclocal}
