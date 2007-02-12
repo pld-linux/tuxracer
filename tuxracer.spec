@@ -1,7 +1,7 @@
 Summary:	Race down mountainous terrain with Tux!
-Summary(pl.UTF-8):   Zjeżdżaj z Tuksem w górzystym terenie!
-Summary(pt_BR.UTF-8):   Corra montanha abaixo com o Tux!
-Summary(de.UTF-8):   Tux Racer ist ein 3D-Computerspiel
+Summary(pl.UTF-8):	Zjeżdżaj z Tuksem w górzystym terenie!
+Summary(pt_BR.UTF-8):	Corra montanha abaixo com o Tux!
+Summary(de.UTF-8):	Tux Racer ist ein 3D-Computerspiel
 Name:		tuxracer
 Version:	0.61
 Release:	11
