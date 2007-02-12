@@ -1,7 +1,7 @@
 Summary:	Race down mountainous terrain with Tux!
-Summary(pl):	Zjeødøaj z Tuksem w gÛrzystym terenie!
-Summary(pt_BR):	Corra montanha abaixo com o Tux!
-Summary(de):	Tux Racer ist ein 3D-Computerspiel
+Summary(pl.UTF-8):   Zje≈ºd≈ºaj z Tuksem w g√≥rzystym terenie!
+Summary(pt_BR.UTF-8):   Corra montanha abaixo com o Tux!
+Summary(de.UTF-8):   Tux Racer ist ein 3D-Computerspiel
 Name:		tuxracer
 Version:	0.61
 Release:	11
@@ -36,21 +36,21 @@ win the title! Tux Racer includes a variety of options for gameplay,
 including the ability to race courses in fog, at night, and under high
 winds.
 
-%description -l pl
-Tux Racer pozwala wcieliÊ siÍ w rolÍ Tuksa, linuksowego Pingwina
-podczas zjazdu w dÛ≥ pokrytych ∂niegiem gÛr. Weº udzia≥ w zawodach i
-zdob±dº tytu≥! Tux Racer zawiera wiele opcji, miÍdzy innymi moøliwo∂Ê
-zjeødøania we mgle, w nocy i podczas silnego wiatru.
+%description -l pl.UTF-8
+Tux Racer pozwala wcieliƒá siƒô w rolƒô Tuksa, linuksowego Pingwina
+podczas zjazdu w d√≥≈Ç pokrytych ≈õniegiem g√≥r. We≈∫ udzia≈Ç w zawodach i
+zdobƒÖd≈∫ tytu≈Ç! Tux Racer zawiera wiele opcji, miƒôdzy innymi mo≈ºliwo≈õƒá
+zje≈ºd≈ºania we mgle, w nocy i podczas silnego wiatru.
 
-%description -l pt_BR
-O objetivo do Tux Racer È divers„o! Corra montanha abaixo t„o r·pido
-quanto possÌvel e capture peixes para aumentar sua pontuaÁ„o!
+%description -l pt_BR.UTF-8
+O objetivo do Tux Racer √© divers√£o! Corra montanha abaixo t√£o r√°pido
+quanto poss√≠vel e capture peixes para aumentar sua pontua√ß√£o!
 
-%description -l de
+%description -l de.UTF-8
 Tux Racer ist ein 3D-Computerspiel, welches bei Linuxnutzern sehr
 beliebt ist. Die Hauptfigur ist das Maskottchen Tux. Dieses muss man
 durch geschicktes Steuern durch eine verschneite Eislandschaft
-rutschen lassen. Dabei m¸ssen manchmal Hindernisse umschifft und
+rutschen lassen. Dabei m√ºssen manchmal Hindernisse umschifft und
 Heringe gesammelt werden.
 
 %prep
