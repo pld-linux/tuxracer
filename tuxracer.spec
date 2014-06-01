@@ -4,7 +4,7 @@ Summary(pt_BR.UTF-8):	Corra montanha abaixo com o Tux!
 Summary(de.UTF-8):	Tux Racer ist ein 3D-Computerspiel
 Name:		tuxracer
 Version:	0.61
-Release:	11
+Release:	12
 License:	GPL
 Group:		X11/Applications/Games
 Source0:	http://dl.sourceforge.net/tuxracer/%{name}-%{version}.tar.gz
