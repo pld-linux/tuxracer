@@ -1,0 +1,11 @@
+--- tuxracer-0.61/configure.in~	2001-01-16 16:26:29.000000000 +0100
++++ tuxracer-0.61/configure.in	2014-06-03 20:42:56.881012967 +0200
+@@ -479,7 +479,7 @@
+ fi
+ 
+ dnl Check for glext.h 
+-AC_CHECK_HEADERS( "GL/glext.h", have_glext_h=yes, have_glext_h=no )
++AC_CHECK_HEADERS( "GL/glext.h", have_glext_h=yes, have_glext_h=no, [#include <GL/gl.h>] )
+ 
+ if test "x$have_glext_h" = "xno" ; then
+     AC_MSG_ERROR([
